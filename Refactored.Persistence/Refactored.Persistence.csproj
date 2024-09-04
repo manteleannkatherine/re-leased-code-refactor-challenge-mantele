@@ -1,0 +1,26 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="Data\" />
+    <None Remove="Entities\" />
+    <None Remove="Enums\" />
+    <None Remove="Data\Repository\" />
+    <None Remove="Data\Repository\Interface\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Data\" />
+    <Folder Include="Entities\" />
+    <Folder Include="Enums\" />
+    <Folder Include="Data\Repository\" />
+    <Folder Include="Data\Repository\Interface\" />
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="Ardalis.EFCore.Extensions" Version="6.0.0" />
+  </ItemGroup>
+</Project>
